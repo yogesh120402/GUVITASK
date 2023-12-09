@@ -1,0 +1,44 @@
+/* style.css */
+
+/* Optional: Add custom styles specific to your signup page */
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 500px;
+}
+
+.col-md-6 {
+    margin: auto;
+}
+
+/* Style form labels */
+.form-group label {
+    font-weight: bold;
+}
+
+/* Style form controls */
+.form-control {
+    border-radius: 4px;
+}
+
+/* Style submit button */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Additional styling for the link */
+.text-center a {
+    color: #007bff;
+}
+
+.text-center a:hover {
+    text-decoration: none;
+    color: #0056b3;
+}
