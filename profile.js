@@ -9,8 +9,6 @@ function updateProfile() {
             alert('Profile updated successfully!');
         },
         error: function (error) {
-            // Handle errors (e.g., display an error message)
-           // console.error(error);
             alert('An error occurred while updating the profile.');
         }
     });
