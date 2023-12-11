@@ -1,25 +1,19 @@
 <?php
 
-<?php
-$servername = "localhost";
-$username = "root";
-$password = "Yogesh@12345";
-$database = "library";
+// This pulls the MongoDB driver from the vendor folder
+require_once '../vendor/autoload.php';
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $database);
+// Connect to MongoDB Database
+$databaseConnection = new MongoDB\Client;
 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-echo "Connected successfully";
-?>
+// Connecting to a specific database in MongoDB
+$myDatabase = $databaseConnection->myDB1;
 
+// Connecting to our MongoDB Collections
+$userCollection = $myDatabase->users;
 
 // Start the session
 session_start();
-
 // If the form is submitted
 // if (isset($_POST['loginForm'])) {
 
